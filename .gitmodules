@@ -1,0 +1,3 @@
+[submodule "Pyra.Framework"]
+	path = Pyra.Framework
+	url = https://github.com/chikalee/Pyra.Framework.git
