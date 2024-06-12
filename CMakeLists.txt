@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.27.0)
+
+
+project(Pyra VERSION 0.1.0 LANGUAGES C CXX)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+# set(CMAKE_CXX_SCAN_FOR_MODULES ON)
+
+set(CMAKE_CXX_STANDARD 20)
+
+set(INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
+
+message(${INCLUDE_DIR})
+
+add_subdirectory(Pyra.Framework)
+
+include(CTest)
+enable_testing()
+
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
