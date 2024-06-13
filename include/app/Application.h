@@ -1,0 +1,7 @@
+namespace Pyra {
+
+class Application{
+
+};
+
+}
