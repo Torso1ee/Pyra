@@ -7,7 +7,7 @@ enable_testing()
 add_library(${PROJECT_NAME})
 
 target_sources(${PROJECT_NAME} PUBLIC
-app/Application.cpp
+app/PyraApplication.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC
