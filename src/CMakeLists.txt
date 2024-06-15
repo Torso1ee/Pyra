@@ -8,6 +8,9 @@ add_library(${PROJECT_NAME})
 
 target_sources(${PROJECT_NAME} PUBLIC
 app/PyraApplication.cpp
+
+control/Control.cpp
+control/Window.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC
