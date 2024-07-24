@@ -2,6 +2,10 @@
     "files.associations": {
         "cstdint": "cpp",
         "*.tcc": "cpp",
-        "iosfwd": "cpp"
-    }
+        "iosfwd": "cpp",
+        "memory": "cpp"
+    },
+    "clangd.arguments": [
+        "--compile-commands-dir=build"
+    ]
 }
